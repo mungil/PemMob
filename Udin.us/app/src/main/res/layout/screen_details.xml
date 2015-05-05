@@ -1,0 +1,126 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.github.ksoichiro.android.observablescrollview.ObservableScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/poster" />
+
+            <TextView
+                android:textSize="20dp"
+                android:id="@+id/body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image"
+                android:background="@android:color/white"
+                android:paddingBottom="@dimen/sixteen"
+                android:paddingLeft="@dimen/sixteen"
+                android:paddingRight="@dimen/sixteen"
+                android:paddingTop="@dimen/sixteen"
+                android:textColor="@android:color/black"
+                android:text="Doscom University 2015"
+               />
+            <TextView
+                android:textSize="18dp"
+                android:id="@+id/tanggal"
+                android:background="@android:color/white"
+                android:paddingBottom="@dimen/sixteen"
+                android:paddingLeft="@dimen/sixteen"
+                android:paddingRight="@dimen/sixteen"
+                android:paddingTop="@dimen/sixteen"
+                android:textColor="@android:color/black"
+                android:text="2 april - 31 Mei 2015"
+                android:layout_below="@+id/body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="18dp"
+                android:id="@+id/isi1"
+                android:background="@android:color/white"
+                android:paddingBottom="@dimen/sixteen"
+                android:paddingLeft="@dimen/sixteen"
+                android:paddingRight="@dimen/sixteen"
+                android:paddingTop="@dimen/sixteen"
+                android:textColor="@android:color/black"
+                android:text="Doscom University (DU) adalah kegiatan belajar mengajar yang berbentuk workshop dengan para dosen pengurus Doscom. DU tahun 2015 membuka 5 kelas yaitu Linux, Pemrograman Mobile, Pemrograman Web, Jaringan Komputer, dan Multimedia. Masing-masing kelas terdapat 5 pertemuan dengan jumlah peserta maksimal 25 orang/ kelas.
+
+                "
+                android:layout_below="@+id/tanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="18dp"
+                android:id="@+id/isi2"
+                android:background="@android:color/white"
+                android:paddingBottom="@dimen/sixteen"
+                android:paddingLeft="@dimen/sixteen"
+                android:paddingRight="@dimen/sixteen"
+                android:paddingTop="@dimen/sixteen"
+                android:textColor="@android:color/black"
+                android:text="FASILITAS\n\nFasilitas yang akan didapat berupa makanan ringan setiap pertemuan, serta sertifikat.\nKami akan memilih 1 lulusan terbaik dari tiap kelas yang nantinya berhak mendapatkan hadiah serta free entry ke Release Party tanggal 23 Mei 2015.\n
+                "
+                android:layout_below="@+id/isi1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="18dp"
+                android:id="@+id/isi3"
+                android:background="@android:color/white"
+                android:paddingBottom="@dimen/sixteen"
+                android:paddingLeft="@dimen/sixteen"
+                android:paddingRight="@dimen/sixteen"
+                android:paddingTop="@dimen/sixteen"
+                android:textColor="@android:color/black"
+                android:text="ALUR PENDAFTARAN\n\nIsi formulir sesuai kelas yang diinginkan\nBayar biaya pendaftaran sebesar Rp 25.000,00 (khusus peserta yang telah mengikuti bootcamp tahun 2014 biaya pendaftarannya sebesar Rp 20.000,00\nPembayaran bisa dilakukan langsung di camp Doscom, gedung D Lantai 1 Universitas Dian Nuswantoro atau melalui rekening Bank Jateng No Rekening : 2-099-10477-8 a/n Nurul Anisa Sri Winarsih. Sertifikat bisa diambil mulai tanggal 25 Mei 2015 di camp Doscom.\n
+"
+                android:layout_below="@+id/isi2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="18dp"
+                android:id="@+id/isi4"
+                android:background="@android:color/white"
+                android:paddingBottom="@dimen/sixteen"
+                android:paddingLeft="@dimen/sixteen"
+                android:paddingRight="@dimen/sixteen"
+                android:paddingTop="@dimen/sixteen"
+                android:textColor="@android:color/black"
+                android:text="Contac Person\n\nDiky Arga - 085713836009\nAwan - 09823871231\n
+"
+                android:layout_below="@+id/isi3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </com.github.ksoichiro.android.observablescrollview.ObservableScrollView>
+
+    <View xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/gradient_header_background"
+        android:minHeight="?attr/actionBarSize" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_dialer_primary"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar" />
+</FrameLayout>
